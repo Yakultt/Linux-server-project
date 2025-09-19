@@ -1,0 +1,9 @@
+# ignore log files
+*.log
+
+# Ignore the vscode temp files
+tempCodeRunnerFile.*
+
+# Ignore the python cache
+__pycache__/
+*.pyc
