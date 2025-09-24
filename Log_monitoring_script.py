@@ -8,8 +8,8 @@ emergency_pattern = re.compile(r".*\bemerg\b.*", re.IGNORECASE)
 
 def read_logs():
     try:
-        with open(LOG_FILE, "r") as f:
-            for line in f:
+        with open(LOG_FILE, "r") as file:
+            for line in file:
                 if emergency_pattern.search(line):
                     print("[EMERGENCY] " + line.strip())
     except PermissionError:
