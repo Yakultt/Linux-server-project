@@ -1,0 +1,13 @@
+add my user
+sudo adduser jay
+sudo usermod -aG sudo jay
+
+I added my public key on my personal computer and then
+copied it to /home/jay/.ssh/authorized_keys on the cloud server
+
+I disabled password login and root SSH access in /etc/ssh/sshd_config
+
+for the fail to ban setup, i did sudo apt install fail2ban -y 
+and then sudo systemctl enable --now fail2ban to constantly start the server fail2ban 
+everytime i boot up the linux server
+
