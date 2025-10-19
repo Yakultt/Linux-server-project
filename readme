@@ -1,1 +1,13 @@
-Showcasing my progress in python and linux and trying to get better at it
+This configuration demonstrates system hardening steps applied on an Ubuntu 22.04 server to improve security and reduce exposure to some brute force attacks.
+
+### Key Tasks
+- Enforced key-based SSH authentication and disabled root login.
+- Configured UFW firewall to allow only essential services.
+- Installed and configured Fail2ban to mitigate brute-force attempts.
+- Applied least-privilege principles to user accounts and permissions.
+
+### Tools Used
+- UFW
+- Fail2ban
+- OpenSSH
+- Bash scripting
