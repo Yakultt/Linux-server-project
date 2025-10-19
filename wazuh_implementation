@@ -1,0 +1,7 @@
+#installing curl and the actual wazuh server
+sudo apt install curl
+curl -sO https://packages.wazuh.com/4.13/wazuh-install.sh
+then I basically did bash directory_that_wazuh_installation_is_in/wazuh_installion.sh -a
+
+
+
