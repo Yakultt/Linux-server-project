@@ -6,6 +6,9 @@ I added my public key on my personal computer and then
 copied it to /home/jay/.ssh/authorized_keys on the cloud server
 
 I disabled password login and root SSH access in /etc/ssh/sshd_config
+I also changed the port to only listen on port 6767 so when you try to ssh into the 
+machine for the user jay, you have to KNOW and specify the port 6767 (i am so corny i know)
+
 
 for the fail to ban setup, i did sudo apt install fail2ban -y 
 and then sudo systemctl enable --now fail2ban to constantly start the server fail2ban 
