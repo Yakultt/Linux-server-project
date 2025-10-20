@@ -1,15 +1,17 @@
 #!/bin/bash
 # Firewall configuration using UFW (Uncomplicated Firewall)
 
+
+# Allow SSH on port 6767 since i configured the user account jay to only listen on port 6767
+#to try and mitigate attack surface cause everyone and their mama knows ssh listens on 22
+sudo ufw allow 6767/tcp
+
+#disallow any other port 
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 
-# Allow SSH on port 22
-sudo ufw allow 22/tcp
 
-# Allow HTTP/HTTPS if my server ever wants to host a web app
-sudo ufw allow 80/tcp
-sudo ufw allow 443/tcp
+
 
 # Enable logging and firewall
 sudo ufw logging on
