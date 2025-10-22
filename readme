@@ -1,4 +1,4 @@
-These configuration files demonstrate system hardening steps applied on an Ubuntu 22.04 server to improve security and reduce exposure to some brute force attacks.
+These configuration files demonstrate system hardening steps applied on an Ubuntu 22.04 web server to improve security and reduce exposure to some brute force attacks.
 
 ### Key Tasks
 - Enforced key-based SSH authentication and disabled root login.
